@@ -26,6 +26,7 @@ Button b1;
         e1=(EditText)findViewById(R.id.e4);
         e3=(EditText)findViewById(R.id.e5);
         b1=(Button)findViewById(R.id.button3);
+        String aa=e1.getText().toString();
         if(ParseUser.getCurrentUser()!=null)
         {
             ParseUser.getCurrentUser().logOut();
@@ -45,10 +46,10 @@ finish();
     }
 
     public void login(View view) {
-
+        String aa=e1.getText().toString();
         ParseUser user=new ParseUser();
         final ProgressDialog po=new ProgressDialog(this);
-        po.setMessage("Signing In"+user.getUsername());
+        po.setMessage("Signing In "+aa);
         po.show();
         user.logInInBackground(e1.getText().toString(), e3.getText().toString(), new LogInCallback() {
             @Override
