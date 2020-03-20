@@ -41,7 +41,7 @@ ArrayAdapter arrayAdapter;
         View view= inflater.inflate(R.layout.fragment_user_tab, container, false);
         listView=view.findViewById(R.id.listview);
         arrayList=new ArrayList();
-        arrayAdapter=new ArrayAdapter(getContext(),android.R.layout.simple_list_item_2,arrayList);
+        arrayAdapter=new ArrayAdapter(getContext(),android.R.layout.simple_list_item_1,arrayList);
         final TextView t=view.findViewById(R.id.textView3);
         ParseQuery<ParseUser> parseUserParseQuery=ParseUser.getQuery();
         parseUserParseQuery.whereNotEqualTo("username",ParseUser.getCurrentUser().getUsername());
