@@ -148,7 +148,7 @@ Toast.makeText(getContext(),"Select Image ",Toast.LENGTH_SHORT).show();
     if(requestCode==2000){
         //Toast.makeText(getContext(),"enter 1stif",Toast.LENGTH_SHORT).show();
         if(resultCode== Activity.RESULT_OK){
-            Toast.makeText(getContext(),"enter 2ndife",Toast.LENGTH_SHORT).show();
+           // Toast.makeText(getContext(),"enter 2ndife",Toast.LENGTH_SHORT).show();
             try {
             Uri selectedImage = data.getData();
             String[] path = {MediaStore.Images.Media.DATA};

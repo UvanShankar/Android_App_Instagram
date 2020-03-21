@@ -43,12 +43,12 @@ Button b1;
 
         final ParseUser user=ParseUser.getCurrentUser();
 
-        if(user.get("Profilename")==null)
+        if(user.get("ProfileName")==null)
         {
             e1.setText("");
         }
         else {
-            e1.setText(user.get("Profilename").toString() + "");
+            e1.setText(user.get("ProfileName").toString() + "");
         }
         if(user.get("ProfileBio")==null)
         {

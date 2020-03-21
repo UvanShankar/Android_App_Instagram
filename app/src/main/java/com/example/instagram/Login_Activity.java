@@ -42,7 +42,10 @@ Button b1;
     }
 
     public void signup(View view) {
-finish();
+        //finish();
+       Intent in=new Intent(Login_Activity.this,MainActivity.class);
+        startActivity(in);
+
     }
 
     public void login(View view) {
@@ -59,6 +62,7 @@ finish();
                 {
                     Intent intent=new Intent(Login_Activity.this,SocialMedia.class);
                     startActivity(intent);
+                    //finish();
                 }
                 else{
                     Toast.makeText(Login_Activity.this,e.getMessage(),Toast.LENGTH_SHORT);

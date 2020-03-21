@@ -72,6 +72,7 @@ ConstraintLayout l1;
                     if (e == null) {
                         Intent intent=new Intent(MainActivity.this,SocialMedia.class);
                         startActivity(intent);
+                        //MainActivity.this.finish();
                     } else {
                         Toast.makeText(MainActivity.this, e.getMessage(), Toast.LENGTH_SHORT).show();
                     }
