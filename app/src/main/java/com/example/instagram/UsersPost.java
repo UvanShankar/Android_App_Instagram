@@ -77,6 +77,7 @@ LinearLayout linearLayout;
                     }
                 }else{
                     Toast.makeText(UsersPost.this,username+" doesn't have any post ",Toast.LENGTH_SHORT).show();
+
                     finish();
                 }
                 dialog.dismiss();
